@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/order_index_root"
+     >
+   
+    <LinearLayout 
+        android:id="@+id/order_index_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+          <!-- title -->
+        <LinearLayout 
+            android:id="@+id/order_cart_title"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rect"
+            android:gravity="center_vertical"
+            >
+            <!-- left -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <Button 
+                    android:id="@+id/cart_clear"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="清除"
+                    />
+            </LinearLayout>
+            <!-- middle -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                ></LinearLayout>
+            <!-- right -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <Button 
+                    android:id="@+id/cart_submit" 
+                    android:layout_width="80dp"
+                    android:text="提交"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            </LinearLayout>
+        <!-- body -->
+        <LinearLayout 
+            android:id="@+id/order_cart_body"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <zjg.qinglu.util.ui.DataGrid
+                android:id="@+id/order_cart_datagrid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                ></zjg.qinglu.util.ui.DataGrid>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

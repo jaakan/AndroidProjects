@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/order_record_root"
+     >
+   
+    <LinearLayout 
+        android:id="@+id/order_record_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+        
+        <!-- body -->
+        <LinearLayout 
+            android:id="@+id/order_record_body"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <zjg.qinglu.util.ui.DataGrid
+                android:id="@+id/order_record_datagrid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                ></zjg.qinglu.util.ui.DataGrid>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zjg.qinglu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+        <!-- 全局模块 -->
+        <!-- 启动界面 -->
+        <activity
+            android:name="zjg.qinglu.AppInit"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="zjg.qinglu.Login" >
+        </activity>
+        <activity android:name="zjg.qinglu.DownLoad" >
+        </activity>
+        <!-- 设置screenOrientation、windowSoftInputMode属性，禁止程序进入时弹出软键盘 -->
+        <activity
+            android:name="zjg.qinglu.Main"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <!-- order模块 -->
+        <activity android:name="zjg.qinglu.order.Cart" >
+        </activity>
+
+        <!-- 设置screenOrientation、windowSoftInputMode属性，禁止程序进入时弹出软键盘 -->
+        <activity
+            android:name="zjg.qinglu.order.Index"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity android:name=".order.Record" >
+        </activity>
+        <activity android:name="zjg.qinglu.order.Search" >
+        </activity>
+    </application>
+
+    <!-- 授权访问网络 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 授权访问摄像头 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 授权访问SD卡 -->
+    <uses-sdk android:minSdkVersion="7" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 查看网络信息时需要以下权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 设置APN时需要上面的ACCESS_NETWORK_STATE及以下权限 -->
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <!-- 设置网络类型时将要使用 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" >
+    </uses-permission>
+
+</manifest>

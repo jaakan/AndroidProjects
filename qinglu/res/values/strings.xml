@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, QingluActivity!</string>
+    <string name="app_name">Qinglu</string>
+    <string name="welcome">Qinglu</string>
+    <string name="usernameLab">用户名：</string>
+    <string name="usernameText">请输入用户名</string>
+    <string name="passwdLab">密 码：</string>
+    <string name="passwdText">请输入密码</string>
+    <string name="loginBtn">登陆</string>
+    <string name="cancelBtn">取消</string>
+
+</resources>

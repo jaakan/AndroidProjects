@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    >
+    <!-- 自定义title -->
+    <LinearLayout android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    </LinearLayout>
+    
+    <!-- 中间动态加载View -->
+    <LinearLayout 
+        android:measureAllChildren="true" 
+        android:id="@+id/containerBody"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        >
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_gravity="bottom" 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        
+        <GridView 
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/main_bar" 
+            >  
+        </GridView>  
+    </LinearLayout>
+</LinearLayout>

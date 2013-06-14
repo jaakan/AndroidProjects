@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/datagrid"
+    android:paddingTop="15dp"
+    >
+
+    <zjg.qinglu.util.ui.PagerCtrl
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        >
+    </zjg.qinglu.util.ui.PagerCtrl>
+    <!-- title -->
+    <zjg.qinglu.util.ui.Row
+        android:id="@+id/datagrid_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ></zjg.qinglu.util.ui.Row>
+    <!-- body -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" 
+        >
+
+        <LinearLayout
+            android:id="@+id/datagrid_body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginBottom="2dp"
+             >
+            <zjg.qinglu.util.ui.Row
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </zjg.qinglu.util.ui.Row>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

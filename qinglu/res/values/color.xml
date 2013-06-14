@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="white">#FFF</color>
+<color name="red">#F00</color>
+<color name="grean">#0F0</color>
+<color name="marketBg">#CCCCCC</color>
+</resources>
