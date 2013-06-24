@@ -169,7 +169,7 @@ public class AppInit extends Activity {
 					break;
 				}
 			}
-		}, 100);
+		}, 300);
 	}
 
 	/****** 检查版本信息根据版本信息选择跳转 ******/
